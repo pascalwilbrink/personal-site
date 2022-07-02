@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .callout {
     grid-template-areas: "name" "contact" "type" "me";
     grid-template-columns: 1fr;
