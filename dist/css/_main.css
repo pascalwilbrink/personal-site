@@ -1,0 +1,27 @@
+.main {
+  background: #172339;
+  height: 640px;
+  padding: 32px 64px;
+}
+.main .container {
+  gap: 64px;
+}
+.main .animate__zoomIn:nth-child(1) {
+  animation-delay: calc(0 * 500ms);
+}
+.main .animate__zoomIn:nth-child(2) {
+  animation-delay: calc(1 * 500ms);
+}
+.main .animate__zoomIn:nth-child(3) {
+  animation-delay: calc(2 * 500ms);
+}
+.main .animate__zoomIn:nth-child(4) {
+  animation-delay: calc(3 * 500ms);
+}
+.main .card {
+  transition: all 0.26s;
+}
+.main .card:hover {
+  transform: scale(1.1);
+  transition: all 0.26s;
+}

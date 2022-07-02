@@ -1,0 +1,24 @@
+.main {
+    background: desaturate(darken(#182848, 3%), 8%);
+    height: 640px;
+    padding: 32px 64px;
+
+    .container {
+        gap: 64px;
+    }
+
+    @for $i from 1 through 4 {
+        .animate__zoomIn:nth-child(#{$i}) {
+            animation-delay: calc(#{$i - 1} * 500ms);
+        }
+    }
+
+    .card {
+        transition: all .26s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all .26s;
+        }
+    }
+}

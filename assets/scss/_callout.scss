@@ -1,0 +1,98 @@
+.callout {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "name me type"
+        "contact me type";
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+
+    .blob {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        opacity: .72;
+        z-index: 1;
+    }
+
+    .callout__profile {
+        width: 100%;
+        display: block;
+        grid-area: me;
+        align-self: end;
+        z-index: 2;
+    }
+
+    .name {
+        grid-area: name;
+        color: #EFEFEF;
+        word-spacing: 9999vh;
+        line-height: 1.2em;
+        font-size: 4em;
+        margin: 0 64px;
+        align-self: end;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+            content: '';
+            border-bottom: 8px solid #ffa918;
+            position: absolute;
+            top: 1.1em;
+            left: 0;
+            animation-name: border-expander;
+            animation-duration: .96s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.15);
+        }
+
+        @keyframes border-expander {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 270px;
+            }
+        }
+    }
+
+    .buttons {
+        margin-left: 64px;
+        grid-area: contact;
+        z-index: 2;
+
+        .button {
+            color: #FFFFFF;
+            margin-right: 32px;
+            transition: all .26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            cursor: pointer;
+            text-decoration: none;
+
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+
+            &:hover {
+                color: #ffa918;
+                transition: all .26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+        }
+    }
+
+    .type {
+        grid-area: type;
+        font-weight: 300;
+        color: #FFFFFF;
+        font-size: 2em;
+        z-index: 2;
+        align-self: center;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+}
