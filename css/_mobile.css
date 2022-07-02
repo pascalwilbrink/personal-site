@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  .callout {
+    grid-template-areas: "name" "contact" "type" "me";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .callout .name {
+    text-align: center;
+    font-size: 3em;
+  }
+  .callout .name::before {
+    left: 50%;
+    margin-left: -135px;
+  }
+  .callout .buttons {
+    margin-left: 0;
+    text-align: center;
+  }
+  .callout .type {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .callout__profile {
+    max-width: 320px;
+    justify-self: center;
+  }
+  .callout .blob {
+    height: 100%;
+  }
+  .callout .blob svg {
+    height: 100%;
+  }
+}
