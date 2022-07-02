@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+.container .flex--5 {
+  flex: 5;
+}
+.container .flex--10 {
+  flex: 10;
+}
+.container .flex--15 {
+  flex: 15;
+}
+.container .flex--20 {
+  flex: 20;
+}
+.container .flex--25 {
+  flex: 25;
+}
+.container .flex--30 {
+  flex: 30;
+}
+.container .flex--35 {
+  flex: 35;
+}
+.container .flex--40 {
+  flex: 40;
+}
+.container .flex--45 {
+  flex: 45;
+}
+.container .flex--50 {
+  flex: 50;
+}
+.container .flex--55 {
+  flex: 55;
+}
+.container .flex--60 {
+  flex: 60;
+}
+.container .flex--65 {
+  flex: 65;
+}
+.container .flex--70 {
+  flex: 70;
+}
+.container .flex--75 {
+  flex: 75;
+}
+.container .flex--80 {
+  flex: 80;
+}
+.container .flex--85 {
+  flex: 85;
+}
+.container .flex--90 {
+  flex: 90;
+}
+.container .flex--95 {
+  flex: 95;
+}
+.container .flex--100 {
+  flex: 100;
+}
+
+.callout {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  position: relative;
+  display: grid;
+  grid-template-areas: "name me type" "contact me type";
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+}
+.callout .blob {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0.72;
+  z-index: 1;
+}
+.callout .callout__profile {
+  width: 100%;
+  display: block;
+  grid-area: me;
+  align-self: end;
+  z-index: 2;
+}
+.callout .name {
+  grid-area: name;
+  color: #EFEFEF;
+  word-spacing: 9999vh;
+  line-height: 1.2em;
+  font-size: 4em;
+  margin: 0 64px;
+  align-self: end;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+}
+.callout .name::before {
+  content: "";
+  border-bottom: 8px solid #ffa918;
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  animation-name: border-expander;
+  animation-duration: 0.96s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.15);
+}
+@keyframes border-expander {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 270px;
+  }
+}
+.callout .buttons {
+  margin-left: 64px;
+  grid-area: contact;
+  z-index: 2;
+}
+.callout .buttons .button {
+  color: #FFFFFF;
+  margin-right: 32px;
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+  text-decoration: none;
+}
+.callout .buttons .button .icon {
+  width: 32px;
+  height: 32px;
+}
+.callout .buttons .button:hover {
+  color: #ffa918;
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.callout .type {
+  grid-area: type;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 2em;
+  z-index: 2;
+  align-self: center;
+}
+.callout .type strong {
+  font-weight: 500;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background: #172339;
+  height: 640px;
+  padding: 32px 64px;
+}
+.main .container {
+  gap: 64px;
+}
+.main .animate__zoomIn:nth-child(1) {
+  animation-delay: calc(0 * 500ms);
+}
+.main .animate__zoomIn:nth-child(2) {
+  animation-delay: calc(1 * 500ms);
+}
+.main .animate__zoomIn:nth-child(3) {
+  animation-delay: calc(2 * 500ms);
+}
+.main .animate__zoomIn:nth-child(4) {
+  animation-delay: calc(3 * 500ms);
+}
+.main .card {
+  transition: all 0.26s;
+}
+.main .card:hover {
+  transform: scale(1.1);
+  transition: all 0.26s;
+}
+
+.card {
+  padding: 32px;
+  background: #EAEAEA;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.card__title {
+  color: #172339;
+  border-bottom: 4px solid #ffa918;
+}
+.card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 1px 3px 5px rgba(0, 0, 0, 0.11) 2px 4px 8px rgba(0, 0, 0, 0.13);
+  transform: scale(1.05);
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.card::after {
+  width: 60px;
+  height: 60px;
+  background: #ffa918;
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  transform: rotate(45deg);
+}
+
+body {
+  background: green;
+}

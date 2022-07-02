@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+}
+.container .flex--5 {
+  flex: 5;
+}
+.container .flex--10 {
+  flex: 10;
+}
+.container .flex--15 {
+  flex: 15;
+}
+.container .flex--20 {
+  flex: 20;
+}
+.container .flex--25 {
+  flex: 25;
+}
+.container .flex--30 {
+  flex: 30;
+}
+.container .flex--35 {
+  flex: 35;
+}
+.container .flex--40 {
+  flex: 40;
+}
+.container .flex--45 {
+  flex: 45;
+}
+.container .flex--50 {
+  flex: 50;
+}
+.container .flex--55 {
+  flex: 55;
+}
+.container .flex--60 {
+  flex: 60;
+}
+.container .flex--65 {
+  flex: 65;
+}
+.container .flex--70 {
+  flex: 70;
+}
+.container .flex--75 {
+  flex: 75;
+}
+.container .flex--80 {
+  flex: 80;
+}
+.container .flex--85 {
+  flex: 85;
+}
+.container .flex--90 {
+  flex: 90;
+}
+.container .flex--95 {
+  flex: 95;
+}
+.container .flex--100 {
+  flex: 100;
+}

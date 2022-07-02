@@ -1,0 +1,26 @@
+.card {
+  padding: 32px;
+  background: #EAEAEA;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.card__title {
+  color: #172339;
+  border-bottom: 4px solid #ffa918;
+}
+.card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 1px 3px 5px rgba(0, 0, 0, 0.11) 2px 4px 8px rgba(0, 0, 0, 0.13);
+  transform: scale(1.05);
+  transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.card::after {
+  width: 60px;
+  height: 60px;
+  background: #ffa918;
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  transform: rotate(45deg);
+}
