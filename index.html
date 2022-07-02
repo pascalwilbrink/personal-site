@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./js/anime.js"></script>
   </head>
   <body>
     <section class="callout">
@@ -27,28 +28,60 @@
         </svg>
       </div>
     </section>
-    <main class="main">
-      <div class="animate__animated animate__zoomIn">
-        <div class="card">
-          <h3 class="card__title">Component Library</h3>
+    <main>
+      <div class="container"> 
+        <div class="flex--100"> 
+          <h1 class="title color--white">Interests</h1>
         </div>
       </div>
-      <div class="animate__animated animate__zoomIn"> 
-        <div class="card">
-          <h3 class="card__title">Contract Testing</h3>
+      <div class="main">
+        <div class="animate__animated animate__zoomIn">
+          <div class="card">
+            <h3 class="card__title">Java</h3>
+            <div class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda obcaecati iure? Voluptate, hic animi obcaecati nam reprehenderit blanditiis velit earum qui neque itaque dolorum enim consectetur, quisquam nulla error.</div>
+          </div>
         </div>
-      </div>
-      <div class="animate__animated animate__zoomIn">
-        <div class="card">
-          <h3 class="card__title">Home Automation</h3>
+        <div class="animate__animated animate__zoomIn"> 
+          <div class="card">
+            <h3 class="card__title">NodeJS</h3>
+            <div class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda obcaecati iure? Voluptate, hic animi obcaecati nam reprehenderit blanditiis velit earum qui neque itaque dolorum enim consectetur, quisquam nulla error.</div>
+          </div>
         </div>
-      </div>
-      <div class="animate__animated animate__zoomIn"> 
-        <div class="card">
-          <h3 class="card__title">Java</h3>
+        <div class="animate__animated animate__zoomIn">
+          <div class="card">
+            <h3 class="card__title">Frontend</h3>
+            <div class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda obcaecati iure? Voluptate, hic animi obcaecati nam reprehenderit blanditiis velit earum qui neque itaque dolorum enim consectetur, quisquam nulla error.</div>
+          </div>
+        </div>
+        <div class="animate__animated animate__zoomIn"> 
+          <div class="card">
+            <h3 class="card__title">Devops</h3>
+            <div class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda obcaecati iure? Voluptate, hic animi obcaecati nam reprehenderit blanditiis velit earum qui neque itaque dolorum enim consectetur, quisquam nulla error.</div>
+          </div>
         </div>
       </div>
     </main>
+    <section>
+      <div class="container"> 
+        <div class="flex--100"> 
+          <h1 class="title color--white">Stats</h1>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="card"> 
+            <h3 class="card__title">Commits</h3>
+            <div class="card__content"><span class="counter counter__commits text--large"></span><span> +</span></div>
+          </div>
+        </div>
+        <div class="stat"> 
+          <div class="card"> 
+            <h3 class="card__title">Hours coded </h3>
+            <div class="card__content"><span class="counter counter__coded-hours text--large" data-count-duration="12000"></span><span> and counting</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>

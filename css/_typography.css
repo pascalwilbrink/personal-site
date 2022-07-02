@@ -11,3 +11,11 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+
+.color--white {
+  color: #FFFFFF;
+}
+
+.text--large {
+  font-size: 2em;
+}

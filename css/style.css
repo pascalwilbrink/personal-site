@@ -9,6 +9,8 @@ body {
 
 .container {
   display: flex;
+  grid: 32px;
+  margin: 0 32px;
 }
 .container .flex--5 {
   flex: 5;
@@ -93,6 +95,7 @@ body {
   grid-area: me;
   align-self: end;
   z-index: 2;
+  margin-top: 32px;
 }
 .callout .name {
   grid-area: name;
@@ -170,12 +173,39 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.main {
+.color--white {
+  color: #FFFFFF;
+}
+
+.text--large {
+  font-size: 2em;
+}
+
+main {
   background: #172339;
+}
+
+section {
+  background: #182848;
+}
+section .card::after {
+  border-right-color: #182848;
+}
+
+.stats {
   padding: 32px;
+}
+
+.main {
+  min-height: 470px;
+  padding: 64px 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 64px;
+  box-sizing: border-box;
+}
+.main .card::after {
+  border-right-color: #172339;
 }
 .main .animate__zoomIn:nth-child(1) {
   animation-delay: calc(0 * 500ms);
@@ -196,6 +226,21 @@ h6 {
   transform: scale(1.1);
   transition: all 0.26s;
 }
+.main .card:hover .card__content {
+  height: 140px;
+  transition: all 0.26s;
+}
+.main .card__content {
+  height: 0px;
+  transition: all 0.26s;
+  overflow: hidden;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
 
 .card {
   padding: 32px;
@@ -214,29 +259,36 @@ h6 {
   transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .card::after {
-  width: 60px;
-  height: 60px;
-  background: #ffa918;
   content: "";
   position: absolute;
-  top: -30px;
-  right: -30px;
-  transform: rotate(45deg);
+  top: 0;
+  right: 0;
+  border-width: 0 32px 32px 0;
+  border-style: solid;
+  border-bottom-color: #ffa918;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .callout {
+    background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);
     grid-template-areas: "name" "contact" "type" "me";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
   }
+  .callout .blob {
+    display: none;
+  }
   .callout .name {
+    margin-top: 32px;
+    word-spacing: initial;
+    margin-bottom: 32px;
     text-align: center;
     font-size: 3em;
   }
   .callout .name::before {
     left: 50%;
     margin-left: -135px;
+    top: 1.2em;
   }
   .callout .buttons {
     margin-left: 0;

@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  grid: 32px;
+  margin: 0 32px;
 }
 .container .flex--5 {
   flex: 5;

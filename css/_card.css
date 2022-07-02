@@ -15,12 +15,11 @@
   transition: all 0.26s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .card::after {
-  width: 60px;
-  height: 60px;
-  background: #ffa918;
   content: "";
   position: absolute;
-  top: -30px;
-  right: -30px;
-  transform: rotate(45deg);
+  top: 0;
+  right: 0;
+  border-width: 0 32px 32px 0;
+  border-bottom-style: solid;
+  border-bottom-color: #ffa918;
 }
